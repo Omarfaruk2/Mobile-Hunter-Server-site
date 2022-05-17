@@ -25,7 +25,7 @@ async function run() {
             res.send(result)
         })
 
-        // // Add Items
+        // // Add Items pro
         app.post('/inventory', async (req, res) => {
             const newItem = req.body
             const result = await mobileCollection.insertOne(newItem)

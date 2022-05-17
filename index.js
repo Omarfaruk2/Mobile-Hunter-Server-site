@@ -52,7 +52,7 @@ async function run() {
             res.send(result)
         })
 
-        // add Quantity 
+        // add Quantity it
 
         app.put("/inventory/:id", async (req, res) => {
             const id = req.params.id

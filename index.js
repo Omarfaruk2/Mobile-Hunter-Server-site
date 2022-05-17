@@ -39,7 +39,7 @@ async function run() {
             const result = await mobileCollection.findOne(query)
             res.send(result)
         })
-        // delevered 
+        // delevered items
         app.put("/inventory/:id", async (req, res) => {
             const id = req.params.id
             const filter = { _id: ObjectId(id) }
@@ -52,7 +52,7 @@ async function run() {
             res.send(result)
         })
 
-        // add Quantity it
+        // add Quantity itemss
 
         app.put("/inventory/:id", async (req, res) => {
             const id = req.params.id

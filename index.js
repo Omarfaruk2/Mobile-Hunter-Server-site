@@ -52,6 +52,9 @@ async function run() {
             res.send(result)
         })
 
+        app.get("/hero", async (req, res) => {
+            res.send("Herocu connected")
+        })
         // add Quantity itemss
 
         app.put("/inventory/:id", async (req, res) => {

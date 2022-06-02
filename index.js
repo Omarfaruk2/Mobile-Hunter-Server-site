@@ -55,7 +55,7 @@ async function run() {
         app.get("/hero", async (req, res) => {
             res.send("Herocu connected")
         })
-        // add Quantity itemss
+        // add Quantity items
 
         app.put("/inventory/:id", async (req, res) => {
             const id = req.params.id
@@ -112,3 +112,4 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log("Listening to port", port)
 })
+
